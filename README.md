@@ -2,6 +2,10 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Template UI
+
+Sakai-vue : [Github Sakai Vue](https://github.com/primefaces/sakai-vue)
+
 ## Setup
 
 Make sure to install the dependencies:
