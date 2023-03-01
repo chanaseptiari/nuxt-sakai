@@ -1,0 +1,45 @@
+<script setup lang="ts">
+defineProps({ error: Object });
+definePageMeta({ layout: 'blank' })
+</script>
+
+<template>
+    <div class="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
+        <div class="flex flex-column align-items-center justify-content-center">
+            <img src="/demo/images/error/logo-error.svg" alt="Sakai logo" class="mb-5 w-6rem flex-shrink-0" />
+            <div class="error-pages">
+                <div class="w-full surface-card py-8 px-5 sm:px-8 flex flex-column align-items-center border-radius-53">
+                    <div class="grid flex flex-column align-items-center">
+                        <div class="flex justify-content-center align-items-center bg-pink-500 border-circle"
+                            style="height: 3.2rem; width: 3.2rem">
+                            <i class="pi pi-fw pi-exclamation-circle text-6xl text-white"></i>
+                        </div>
+                        <h1 class="text-900 font-bold text-6xl mb-2">
+                            {{ error.statusCode }}
+                        </h1>
+                        <span class="text-600 mb-6">{{ error.statusMessage }}</span>
+                        <img src="/demo/images/error/asset-error.svg" alt="Error" class="mb-5" width="80%" />
+                        <div class="col-12 mt-5 text-center">
+                            <i class="pi pi-fw pi-arrow-left text-blue-500 mr-2" style="vertical-align: center"></i>
+                            <NuxtLink to="/" class="text-blue-500">Go to Dashboard</NuxtLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped lang="scss">
+.error-pages {
+    border-radius: 53px;
+    padding: 0.3rem;
+    background: linear-gradient(180deg,
+            rgba(216, 7, 77, 0.568) 10%,
+            rgba(33, 150, 243, 0) 30%);
+}
+
+.border-radius-53 {
+    border-radius: 53px
+}
+</style>
