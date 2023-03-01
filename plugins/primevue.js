@@ -98,9 +98,6 @@ import TreeTable from "primevue/treetable";
 import TriStateCheckbox from "primevue/tristatecheckbox";
 import VirtualScroller from "primevue/virtualscroller";
 
-import CodeHighlight from "@/components/CodeHighlight.vue";
-import BlockViewer from "@/components/BlockViewer.vue";
-
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue, { ripple: true });
 
@@ -112,9 +109,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.directive("badge", BadgeDirective);
   nuxtApp.vueApp.directive("ripple", Ripple);
   nuxtApp.vueApp.directive("styleclass", StyleClass);
-
-  nuxtApp.vueApp.component("CodeHighlight", CodeHighlight);
-  nuxtApp.vueApp.component("BlockViewer", BlockViewer);
 
   nuxtApp.vueApp.component("Accordion", Accordion);
   nuxtApp.vueApp.component("AccordionTab", AccordionTab);
