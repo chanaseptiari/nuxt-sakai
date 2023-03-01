@@ -1,5 +1,4 @@
 {
-  "name": "Nuxt Sakai",
   "private": true,
   "scripts": {
     "build": "nuxt build",
