@@ -7,4 +7,7 @@ node_modules
 .env
 dist
 .DS_Store
+# package
 yarn.lock
+package-lock.json
+pnpm*.yml
